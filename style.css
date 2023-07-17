@@ -8,13 +8,13 @@
   font-size: 62.5%;
 }
 
-body {
+.timer {
   display: flex;
-  padding: 1.96rem 0;
+  padding: 1rem 0;
   gap: 19.4rem;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  margin-top: 12rem;
 }
 
 .span {
@@ -44,5 +44,91 @@ button {
 .sounds {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+  gap: 3rem;
 }
+
+.florest,
+.stand,
+.fire,
+.rain {
+  position: relative;
+  border-radius: 2.4rem;
+  background: #e1e1e6;
+  width: 13.8rem;
+  height: 15.2rem;
+  padding: 0.4rem;
+}
+
+.florest svg,
+.stand svg,
+.fire svg,
+.rain svg {
+  margin-bottom: 3rem;
+}
+
+.hide {
+  display: none;
+}
+
+body.dark {
+  background-color: #121214;
+}
+body.dark .buttons svg path {
+  fill: #c4c4cc;
+}
+
+body.dark .span {
+  color: #fff;
+}
+
+body.dark .sounds button {
+  background-color: #323238;
+}
+
+body.dark .sounds button svg path:nth-child(1) {
+  fill: #e1e1e6;
+}
+
+body.dark .sounds button:hover {
+  box-shadow: 0 0 0.5rem #0a3442;
+}
+body.dark .sounds button.active svg path {
+  fill: #ffffff;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 3.4rem 3.4rem 0;
+}
+
+.input {
+  position: absolute;
+  bottom: 20px;
+  left: 25px;
+  appearance: none;
+  width: 9rem;
+  height: 0.6rem;
+  border-radius: 8px;
+  background: #323238;
+}
+
+input[type='range']::-webkit-slider-thumb {
+  width: 20px;
+  -webkit-appearance: none;
+  height: 20px;
+  border-radius: 99.99rem;
+  cursor: ew-resize;
+  background: #434343;
+}
+
+
+body.dark input[type='range']::-webkit-slider-thumb, body.dark .input {
+  background: #e1e1e6;
+}
+
+.active, input[type='range'].active::-webkit-slider-thumb{
+  background: #e1e1e6;
+}
+
