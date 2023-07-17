@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  padding: 1.96rem 0;
+  gap: 19.4rem;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.span {
+  color: #323238;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 12rem;
+  font-weight: 500;
+}
+
+.buttons {
+  display: flex;
+  gap: 3.6rem;
+}
+
+.buttons svg {
+  width: 4.8rem;
+  height: 4.8rem;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.sounds {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
